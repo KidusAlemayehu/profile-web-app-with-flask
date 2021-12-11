@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Gudea:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 * {
     margin: 0;
     padding: 0;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Unica One', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .navbar .nav-link {
     color: #181818;
 }
 
+.navbar .nav-link:hover {
+    color: rgb(0, 116, 211);
+}
+
 .showcase .card {
     border-radius: 20px;
-    margin: 12em 0 12em 5em;
+    margin: 12em 0 12em 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: rgba(255, 255, 255, 0.5)
 }
