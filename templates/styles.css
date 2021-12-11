@@ -7,13 +7,14 @@
 }
 
 .navbar .nav-link {
-    color: #ffffff;
+    color: #181818;
 }
 
 .showcase .card {
     border-radius: 20px;
     margin: 12em 0 12em 5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(255, 255, 255, 0.5)
 }
 
 .showcase .card h1 {
@@ -26,11 +27,12 @@
 }
 
 .showcase {
-    background-image: url('12244.jpg');
+    background-image: url('6311.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(78, 78, 78);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
     height: 100%;
 }
