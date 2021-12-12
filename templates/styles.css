@@ -95,3 +95,33 @@ body html {
     font-family: 'Gudea', sans-serif;
     font-size: 1em;
 }
+
+.current-stats {
+    background-color: rgb(26, 26, 26);
+}
+
+.current-stats .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 0 0 5em 0;
+}
+
+.current-stats .title {
+    font-family: 'Unica One', sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 4.5em;
+    margin: 1em 0 0.8em 0;
+}
+
+.current-stats .card h1 {
+    font-size: 4em;
+}
+
+.current-stats .vr {
+    display: inline;
+    height: 200px;
+    width: 1px;
+    border: 1px inset black solid;
+    margin: 5px
+}
