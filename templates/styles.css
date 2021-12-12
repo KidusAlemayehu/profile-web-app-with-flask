@@ -60,7 +60,7 @@ body html {
     background-color: rgb(78, 78, 78);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
-    height: 1000px;
+    height: 950px;
 }
 
 .showcase .card button {
@@ -68,21 +68,29 @@ body html {
     margin-left: auto;
 }
 
+.our-section .wwd h1 {
+    font-family: 'Unica One', sans-serif;
+    margin: 1em;
+    font-weight: bolder;
+    font-size: 4.5em;
+}
+
 .our-section .card {
-    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: 0 0 5em 0;
 }
 
 .our-section .card .card-body i {
-    font-size: 10em;
+    font-size: 6em;
 }
 
-.our-section .wdwd .c {
-    color: black;
-    height: 10px;
-    width: 50px;
+.our-section .card .card-body h4 {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 2em;
 }
 
-.our-section .cards-wdwd {
-    padding: 2em 0 2em 0;
-    margin: 2em 0 2em 0;
+.our-section .card .card-body p {
+    font-family: 'Gudea', sans-serif;
+    font-size: 1em;
 }
