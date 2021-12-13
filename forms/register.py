@@ -3,8 +3,12 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, EqualTo, Length, Email
 
 
-class LoginForm(FlaskForm):
+class RegisterForm(FlaskForm):
+    name = StringField('name', validators=[DataRequired()])
+    username = StringField('username', validators=[DataRequired()])
     email = StringField('email', validators=[DataRequired(), Email()])
     password = PasswordField('password', validators=[
                              DataRequired(), Length(min=6, max=20)])
-    submit = SubmitField('login')
+    confirmPassword = PasswordField('confirmPassword', validators=[
+                                    DataRequired, EqualTo('password'), ])
+    submit = SubmitField('register')
