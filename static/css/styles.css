@@ -14,7 +14,7 @@ body html {
 .navbar .navbar-brand {
     font-family: 'Unica One', sans-serif;
     color: #ffffff;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ body html {
 .showcase .card {
     border-radius: 20px;
     margin: 12em 0 12em 3em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 5px 0 rgba(2, 30, 82, 0.027), 0 6px 10px 0 rgba(0, 27, 102, 0.19);
     background: rgba(255, 255, 255, 0.5)
 }
 
@@ -166,4 +166,15 @@ body html {
     font-weight: bolder;
     font-size: 3.5em;
     margin: 1em 0 0.8em 0;
+}
+
+.login-section .login {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-section .title h4 {
+    font-family: 'Unica One', sans-serif;
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+    font-size: 3.5em;
 }

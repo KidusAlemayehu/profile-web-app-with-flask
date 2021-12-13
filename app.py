@@ -20,7 +20,7 @@ def signin():
 
 @app.route("/sign_up")
 def signup():
-    return render_template('sign_up.html')
+    return render_template('sign-up.html')
 
 
 @app.route("/<user_id>/blog-posts/new-post")
