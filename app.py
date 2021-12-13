@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+from forms.login import LoginForm
+from forms.register import RegistrationForm
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'ebc701ad02288d439cc079060cb28dbe681b9d100e387ac40cbb0728150b4aef'
 
 
 @app.route("/")
@@ -15,12 +18,14 @@ def home(user_id):
 
 @app.route("/sign_in")
 def signin():
-    return render_template('sing-in.html')
+    form = LoginForm()
+    return render_template('sing-in.html', form=form)
 
 
 @app.route("/sign_up")
 def signup():
-    return render_template('sign-up.html')
+    form = RegistrationForm()
+    return render_template('sign-up.html', form=form)
 
 
 @app.route("/<user_id>/blog-posts/new-post")
