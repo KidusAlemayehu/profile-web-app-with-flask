@@ -43,30 +43,38 @@
                             <div class="row">
                                 <div class="col-9 text-start mx-auto">
                                     <div class="mt-3 mb-1">
-                                        <label for="email" class="form-label">Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter Your email" name="email">
+                                        <label for="name" class="form-label">Email</label> {% if form.email.errors%} {{form.email(class="form-control is-invalid", placeholder="Enter your Email")}}
+                                        <div class="invalid-feedback">
+                                            {% for error in form.email.errors%}
+                                            <span>{{error}}</span> {% endfor%}
+                                        </div>
+                                        {% else%} {{form.email(class="form-control", placeholder="Enter your Email")}} {% endif%}
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-9 text-start mx-auto">
                                     <div class="mt-1 mb-1">
-                                        <label for="password" class="form-label">Password:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Enter Your Password" name="password">
+                                        <label for="name" class="form-label">Password</label> {% if form.password.errors%} {{form.password(class="form-control is-invalid", placeholder="Create Your Password")}}
+                                        <div class="invalid-feedback">
+                                            {% for error in form.password.errors%}
+                                            <span>{{error}}</span> {% endfor%}
+                                        </div>
+                                        {% else%} {{form.password(class="form-control", placeholder="Create Your Password")}} {% endif%}
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-9 text-start mx-auto">
                                     <div class="mt-3 mb-4 d-grid">
-                                        <button type="submit" class="btn btn-block btn-primary">Sign In</button>
-                                    </div>
+                                        {{form.submit(class="btn btn-block btn-primary")}} </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </body>

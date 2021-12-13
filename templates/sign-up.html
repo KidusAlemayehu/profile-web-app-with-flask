@@ -38,57 +38,78 @@
             </div>
             <div class="row">
                 <div class="col-xl-5 mx-auto">
-                    <div class="bg-light text-dark text-center rounded mt-lg-3 signup">
-                        <div class="conatainer mt-1 mb-2">
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-4 mb-1">
-                                        <label for="name" class="form-label">Full Name</label>
-                                        <input type="name" class="form-control" id="name" placeholder="Enter Full Name" name="name">
+                    <form method="POST">
+                        <div class="bg-light text-dark text-center rounded mt-lg-3 signup">
+                            <div class="container mt-1 mb-2">
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-4 mb-1">
+                                            <label for="name" class="form-label">Full Name</label> {% if form.fullname.errors%} {{form.fullname(class="form-control is-invalid", placeholder="Enter your Full Name")}}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.fullname.errors%}
+                                                <span>{{error}}</span> {% endfor%}
+                                            </div>
+                                            {% else%} {{form.fullname(class="form-control", placeholder="Enter your Full Name")}} {% endif%}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-1 mb-1">
-                                        <label for="name" class="form-label">Username:</label>
-                                        <input type="name" class="form-control" id="name" placeholder="Choose Your Username" name="username">
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-1 mb-1">
+                                            <label for="name" class="form-label">Username</label> {% if form.username.errors%} {{form.username(class="form-control is-invalid", placeholder="Enter your Username")}}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.username.errors%}
+                                                <span>{{error}}</span> {% endfor%}
+                                            </div>
+                                            {% else%} {{form.username(class="form-control", placeholder="Choose Your Own Username")}} {% endif%}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-1 mb-1">
-                                        <label for="email" class="form-label">Email:</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-1 mb-1">
+                                            <label for="name" class="form-label">Email</label> {% if form.email.errors%} {{form.email(class="form-control is-invalid", placeholder="Enter your Email")}}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.email.errors%}
+                                                <span>{{error}}</span> {% endfor%}
+                                            </div>
+                                            {% else%} {{form.email(class="form-control", placeholder="Enter your Email")}} {% endif%}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-1 mb-1">
-                                        <label for="password" class="form-label">Password:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Create Password" name="password">
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-1 mb-1">
+                                            <label for="name" class="form-label">Password</label> {% if form.password.errors%} {{form.password(class="form-control is-invalid", placeholder="Create Your Password")}}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.password.errors%}
+                                                <span>{{error}}</span> {% endfor%}
+                                            </div>
+                                            {% else%} {{form.password(class="form-control", placeholder="Create Your Password")}} {% endif%}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-1 mb-1">
-                                        <label for="password" class="form-label">Confirm Password:</label>
-                                        <input type="password" class="form-control" id="password" placeholder="Confirm Password" name="confirmPassword">
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-1 mb-1">
+                                            <label for="name" class="form-label">Confirm Password</label> {% if form.confirmPassword.errors%} {{form.fullname(class="form-control is-invalid", placeholder="Confirm Your Password")}}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.confirmPassword.errors%}
+                                                <span>{{error}}</span> {% endfor%}
+                                            </div>
+                                            {% else%} {{form.confirmPassword(class="form-control", placeholder="Confirm Your Password")}} {% endif%}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-9 text-start mx-auto">
-                                    <div class="mt-3 mb-4 d-grid">
-                                        <button type="submit" class="btn btn-block btn-success">Sign Up</button>
+                                <div class="row">
+                                    <div class="col-9 text-start mx-auto">
+                                        <div class="mt-3 mb-4 d-grid">
+                                            {{form.submit(class="btn btn-block btn-success")}} </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
