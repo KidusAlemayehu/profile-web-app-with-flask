@@ -57,7 +57,7 @@ body html {
 }
 
 .showcase {
-    background-image: url('6311.jpg');
+    background-image: url('../images/showcase-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
