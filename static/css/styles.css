@@ -168,13 +168,13 @@ body html {
     margin: 1em 0 0.8em 0;
 }
 
-.login-section .login {
+.signup-section .signup {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.login-section .title h4 {
+.signup-section .title h4 {
     font-family: 'Unica One', sans-serif;
     color: rgb(37, 37, 37);
     font-weight: bolder;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
