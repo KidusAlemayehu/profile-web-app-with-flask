@@ -19,7 +19,7 @@ def home(user_id):
 @app.route("/sign_in")
 def signin():
     form = LoginForm()
-    return render_template('sing-in.html', form=form)
+    return render_template('sign-in.html', form=form)
 
 
 @app.route("/sign_up")

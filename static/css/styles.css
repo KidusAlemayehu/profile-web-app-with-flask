@@ -36,7 +36,11 @@ body html {
     margin: 0.5em 0 0 0;
 }
 
-.navbar ul li .btn {
+.signup-nav ul li p {
+    margin: 0.5em 1em 0 0;
+}
+
+.showcase .navbar ul li .btn {
     margin: 0 5px 0 5px;
 }
 
