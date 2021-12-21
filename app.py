@@ -11,7 +11,7 @@ def index():
     return render_template('base.html')
 
 
-@app.route("/<user_id>/home")
+@app.route("/<user_id>/home/status")
 def home(user_id):
     return render_template('home.html', user_id=user_id)
 
