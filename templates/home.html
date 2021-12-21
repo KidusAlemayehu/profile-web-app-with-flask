@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-fixed bg-dark sticky-top">
-        <div class="caontainer-fluid">
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top home-nav">
+        <div class="container-fluid">
             <ul class="navbar-nav ms-4">
                 <li class="nav-item">
                     <a class="navbar-brand text-light">Logo</a>
@@ -34,140 +34,180 @@
                     <a class="nav-link" href="#">groups</a>
                 </li>
             </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ms-2">
+                    <i class="far fa-bell"></i>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class=" navbar-brand dropdown-toggle " data-bs-toggle="dropdown " href="# ">
+                            <img src="{{ url_for( 'static', filename='./images/kisspng-computer-icons-user-clip-art-user-5abf13dad7aed4.5909364715224718988835.jpg' )}} " alt="Avatar Logo " style="width:20px; " class="rounded-pill dropdown ">
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item " href="# ">Link 1</a></li>
+                            <li><a class="dropdown-item " href="# ">Link 2</a></li>
+                            <li><a class="dropdown-item " href="# ">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
-    <section class="home-showcase container-fluid">
-        <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-2 bg-light min-vh-100 position-fixed pt-2 overflow-hidden">
-                <div class="sidenav px-3 mt-3">
-                    <ul class="navbar-nav mt-4 p-2">
-                        <li class="nav-item mt-2 mb-2">
-                            <a href="#" class="text-secondary text-decoration-none"><i class="fas fa-home"></i>  Home</a>
+    <section class="home-showcase container-fluid ">
+        <div class="row ">
+            <div class="col-xl-2 col-lg-2 col-md-2 bg-light min-vh-100 position-fixed pt-2 overflow-hidden ">
+                <div class="sidenav px-2 mt-3 ">
+                    <ul class="navbar-nav mt-4 p-2 ">
+                        <li class="nav-item mt-2 mb-2 ">
+                            <a href="# " class="text-secondary text-decoration-none "><i class="fas fa-home "></i>  Home</a>
                         </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a href="#" class="text-secondary text-decoration-none"><i class="fas fa-home"></i>  Home</a>
+                        <li class="nav-item mt-2 mb-2 ">
+                            <a href="# " class="text-secondary text-decoration-none "><i class="fas fa-home "></i>  Home</a>
                         </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a href="#" class="text-secondary text-decoration-none"><i class="fas fa-home"></i>  Home</a>
+                        <li class="nav-item mt-2 mb-2 ">
+                            <a href="# " class="text-secondary text-decoration-none "><i class="fas fa-home "></i>  Home</a>
                         </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a href="#" class="text-secondary text-decoration-none"><i class="fas fa-home"></i>  Home</a>
+                        <li class="nav-item mt-2 mb-2 ">
+                            <a href="# " class="text-secondary text-decoration-none "><i class="fas fa-home "></i>  Home</a>
                         </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a href="#" class="text-secondary text-decoration-none"><i class="fas fa-home"></i>  Home</a>
+                        <li class="nav-item mt-2 mb-2 ">
+                            <a href="# " class="text-secondary text-decoration-none "><i class="fas fa-home "></i>  Home</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-7 mx-auto">
-                <div class="container content-section mt-5 mb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-8">
-                                <span class="rounded-circle"></span>
-                                <p class="user_name-blog"><strong>Username Goes Here</strong>
+            <div class="col-6 mx-auto ">
+                <div class="container content-section mt-5 mb-5 ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-8 ">
+                                <span class="rounded-circle "></span>
+                                <p class="user_name-blog "><strong>Username Goes Here</strong>
                                     <br> auto time now
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="mt-1 p-5 bg-light rounded border-dark">
+                        <div class="row ">
+                            <div class="mt-1 ms-5 p-5 bg-light rounded border-dark ">
                                 <h2>Title Goes here</h2>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ducimus a nostrum vero, maxime recusandae, fugiat mollitia optio ad eius animi. Ipsam perspiciatis corrupti provident autem maiores nam aliquid non.</p>
                             </div>
                         </div>
-                        <div class="row mt-2">
-                            <div class="container">
-                                <div class="row text-center">
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-star"></i></a>
+                        <div class="row mt-2 ">
+                            <div class="container ">
+                                <div class="row text-center ">
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-star "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-hand-peace"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-hand-peace "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-share-square"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-share-square "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="fas fa-ellipsis-h"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="fas fa-ellipsis-h "></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container content-section mt-5 mb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-8">
-                                <span class="rounded-circle"></span>
-                                <p class="user_name-blog"><strong>Username Goes Here</strong>
+                <div class="container content-section mt-5 mb-5 ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-8 ">
+                                <span class="rounded-circle "></span>
+                                <p class="user_name-blog "><strong>Username Goes Here</strong>
                                     <br> auto time now
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="mt-1 p-5 bg-light rounded border-dark">
+                        <div class="row ">
+                            <div class="mt-1 ms-5 p-5 bg-light rounded border-dark ">
                                 <h2>Title Goes here</h2>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ducimus a nostrum vero, maxime recusandae, fugiat mollitia optio ad eius animi. Ipsam perspiciatis corrupti provident autem maiores nam aliquid non.</p>
                             </div>
                         </div>
-                        <div class="row mt-2">
-                            <div class="container">
-                                <div class="row text-center">
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-star"></i></a>
+                        <div class="row mt-2 ">
+                            <div class="container ">
+                                <div class="row text-center ">
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-star "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-hand-peace"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-hand-peace "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-share-square"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-share-square "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="fas fa-ellipsis-h"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="fas fa-ellipsis-h "></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container content-section mt-5 mb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-8">
-                                <span class="rounded-circle"></span>
-                                <p class="user_name-blog"><strong>Username Goes Here</strong>
+                <div class="container content-section mt-5 mb-5 ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-8 ">
+                                <span class="rounded-circle "></span>
+                                <p class="user_name-blog "><strong>Username Goes Here</strong>
                                     <br> auto time now
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="mt-1 p-5 bg-light rounded border-dark">
+                        <div class="row ">
+                            <div class="mt-1 ms-5 p-5 bg-light rounded border-dark ">
                                 <h2>Title Goes here</h2>
                                 <hr>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ducimus a nostrum vero, maxime recusandae, fugiat mollitia optio ad eius animi. Ipsam perspiciatis corrupti provident autem maiores nam aliquid non.</p>
                             </div>
                         </div>
-                        <div class="row mt-2">
-                            <div class="container">
-                                <div class="row text-center">
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-star"></i></a>
+                        <div class="row mt-2 ">
+                            <div class="container ">
+                                <div class="row text-center ">
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-star "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-hand-peace"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-hand-peace "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="far fa-share-square"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="far fa-share-square "></i></a>
                                     </div>
-                                    <div class="col-3">
-                                        <a href=""><i class="fas fa-ellipsis-h"></i></a>
+                                    <div class="col-3 ">
+                                        <a href=" "><i class="fas fa-ellipsis-h "></i></a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 topics ">
+                <div class="border-dark p-2 ">
+                    <div class="mt-4 ">
+                        <h4>Explore Topics</h4>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-6 ">
+                            <button type="button " class="btn rounded-pill btn-outline-primary " style="font-size: 0.8em; "><i class="fas fa-plus "></i> Messages</button>
+                        </div>
+                        <div class="col-6 ">
+                            <button type="button " class="btn rounded-pill btn-outline-primary " style="font-size: 0.8em; "><i class="fas fa-plus "></i> Messages</button>
+                        </div>
+                    </div>
+                    <div class="row mt-4 ">
+                        <div class="col-6 ">
+                            <button type="button " class="btn rounded-pill btn-outline-primary " style="font-size: 0.8em; "><i class="fas fa-plus "></i> Announcement</button>
+                        </div>
+                        <div class="col-6 ">
+                            <button type="button " class="btn rounded-pill btn-outline-primary " style="font-size: 0.8em; "><i class="fas fa-plus "></i> Messages</button>
                         </div>
                     </div>
                 </div>

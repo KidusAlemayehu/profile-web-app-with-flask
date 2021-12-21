@@ -32,6 +32,11 @@ body html {
     font-size: 40px;
 }
 
+.home-nav .navbar-nav .nav-item i {
+    margin: 0.3em 0.5em 0 0;
+    font-size: 1.5em;
+}
+
 .navbar ul {
     margin: 0.5em 0 0 0;
 }
@@ -209,4 +214,15 @@ body html {
 
 .user_name-blog {
     display: inline-block;
+}
+
+.topics h4 {
+    font-family: 'Arima Madurai', cursive;
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.topics .btn i {
+    font-size: 0.75em;
 }
