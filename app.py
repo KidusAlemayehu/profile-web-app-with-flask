@@ -33,5 +33,10 @@ def post():
     return render_template('post.html')
 
 
+@app.route("/<user_id>/profile")
+def profile(user_id):
+    return render_template('profile.html', user_id=user_id)
+
+
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
