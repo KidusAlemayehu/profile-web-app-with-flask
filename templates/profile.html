@@ -78,40 +78,39 @@
             </div>
 
             <div class="col-9 mx-auto">
-                <div class="row mt-5">
-                    <div class="col-6 mt-4">
-                        <div class="card rounded-3" style="width:400px;">
-                            <img class="card-img-top" src="{{ url_for('static', filename='./images/profile.jpg') }}" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 mt-4">
-                        <div class="row">
-                            <div class="col-12 mb-4 min-vw-100">
-                                <div class="card rounded-3" style="width:600px">
+                <section class="profile section">
+                    <div class="container">
+                        <div class="row ms-5 mt-5 p-3">
+                            <div class="col-xl-6">
+                                <div class="card" style="width:550px;">
+                                    <div class="container">
+                                        <div class="col-8 mx-auto mt-3 rounded-3">
+                                            <img class="card-img-top img-responsive center-block" src="{{url_for('static', filename='./images/profile.jpg')}}" style="max-width:400px; max-height:400px;" alt="Card image">
+                                        </div>
+                                    </div>
+                                    <hr>
                                     <div class="card-body">
-                                        <h4 class="card-title">John Doe</h4>
-                                        <p class="card-text">Some example text.</p>
-                                        <a href="#" class="btn btn-primary">See Profile</a>
+                                        <h1>40K+</h1>
+                                        <h5>Projects</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis asperiores, dignissimos consequatur ducimus aliquid aut explicabo, commodi, dolor ab quae illum! Unde nihil blanditiis molestias fugiat eos vero
+                                            soluta accusamus?</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mb-4 min-vw-100">
-                                <div class="card rounded-3" style="width:600px">
+                            <!-- <div class="vr"></div> -->
+                            <div class="col-xl-6">
+                                <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title">John Doe</h4>
-                                        <p class="card-text">Some example text.</p>
-                                        <a href="#" class="btn btn-primary">See Profile</a>
+                                        <h1>40K+</h1>
+                                        <h5>Projects</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis asperiores, dignissimos consequatur ducimus aliquid aut explicabo, commodi, dolor ab quae illum! Unde nihil blanditiis molestias fugiat eos vero
+                                            soluta accusamus?</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
